@@ -1,0 +1,22 @@
+name: platform_view_swift
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.4
+
+dev_dependencies:
+  analysis_defaults:
+    path: ../analysis_defaults
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

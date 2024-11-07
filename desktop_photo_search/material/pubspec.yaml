@@ -1,0 +1,59 @@
+name: desktop_photo_search
+description: Search for Photos, using the Unsplash API.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  built_collection: ^5.1.1
+  built_value: ^8.6.1
+  cupertino_icons: ^1.0.5
+  file_selector: ^1.0.0
+  flutter:
+    sdk: flutter
+  flutter_simple_treeview: ^3.0.2
+  http: ^1.2.1
+  logging: ^1.2.0
+  menubar:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/menubar
+      ref: 6c66ad23ee79749f30a8eece542cf54eaf157ed8
+  provider: ^6.0.5
+  transparent_image: ^2.0.1
+  url_launcher: ^6.1.12
+  uuid: ^4.0.0
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: 6c66ad23ee79749f30a8eece542cf54eaf157ed8
+
+dev_dependencies:
+  analysis_defaults:
+    path: ../../analysis_defaults
+  async: ^2.11.0
+  build: ^2.4.1
+  build_runner: ^2.4.6
+  built_value_generator: ^8.6.1
+  flutter_test:
+    sdk: flutter
+  grinder: ^0.9.4
+  msix: ^3.16.1
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: Flutter Desktop Photo Search
+  publisher_display_name: flutter.dev
+  store: false # Set to true to deploy to Microsoft Store
+  publisher: CN=01A6D5C0-D51A-4EEE-8DD0-F134DDD378F7
+  identity_name: 16354flutter.dev.FlutterDesktopPhotoSearch
+  msix_version: 1.0.0.1
+  icons_background_color: "#ffffff"
+  architecture: x64
+  # See https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+  capabilities: "internetClient"

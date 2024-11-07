@@ -1,0 +1,24 @@
+name: splash_screen_sample
+description: A sample Flutter app with animated splash screen on Android 12.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  analysis_defaults:
+    path: ../analysis_defaults
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/androidIcon.png

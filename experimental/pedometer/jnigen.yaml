@@ -1,0 +1,25 @@
+android_sdk_config:
+  add_gradle_deps: true
+  add_gradle_sources: true
+  android_example: 'example/'
+
+output:
+  c:
+    library_name: health_connect
+    path: src/health_connect/
+  dart:
+    path: lib/health_connect.dart
+    structure: single_file
+
+classes:
+  - 'androidx.health.connect.client.HealthConnectClient'
+  - 'androidx.health.connect.client.PermissionController'
+  - 'androidx.health.connect.client.records.StepsRecord'
+  - 'androidx.health.connect.client.time'
+  - 'android.content.Context'
+  - 'android.content.Intent'
+  - 'android.app.Activity'
+  - 'java.time.Instant'
+  - 'androidx.health.connect.client.request'
+  - 'androidx.health.connect.client.aggregate.AggregationResult'
+  - 'androidx.health.connect.client.aggregate.AggregateMetric'
